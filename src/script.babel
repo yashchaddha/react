@@ -1,0 +1,17 @@
+function Person(props){
+  return(
+    <div className="person">
+       <h1>{props.name}</h1>
+       <p>My age:{props.age}</p>
+    </div>
+  );
+}
+
+var app=(
+  <div>
+   <Person name="Yash" age="22"/> 
+   <Person name="Harsh" age="20"/>
+  </div>
+  
+);
+ReactDOM.render(app,document.querySelector('#app'));
